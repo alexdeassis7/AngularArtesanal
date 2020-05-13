@@ -1,0 +1,102 @@
+<!-- Main Toolbar of an App -->
+<mat-toolbar color="green">
+    <span>Al Recibir el mensaje Lo contactaremos a su mail .</span>
+    <span class="demo-toolbar"></span>
+
+</mat-toolbar>
+
+<mat-card>
+    <!-- Title of an Card -->
+    <mat-card-title>
+        Envíenos un email con su Consulta
+    </mat-card-title>
+
+    <mat-card-content>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <mat-form-field style="width:400px !important" class="demo-full-width">
+                            <input matInput placeholder="Nombre">
+                        </mat-form-field>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field style="width:400px !important" class="demo-full-width">
+                            <input matInput placeholder="Asunto">
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <mat-form-field style="width:400px !important" class="demo-full-width">
+                            <input matInput placeholder="Email">
+                        </mat-form-field>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <mat-form-field style="width:400px !important" class="demo-full-width">
+                            <input matInput placeholder="Telefono">
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <mat-form-field class="demo-full-width" style="width:400px !important">
+                            <textarea matInput placeholder="Consulta" matTextareaAutosize matAutosizeMinRows="2" matAutosizeMaxRows="5"></textarea>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <mat-form-field class="demo-full-width">
+                            <input matInput [matDatepicker]="picker" placeholder="Dia de Visita ">
+                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-datepicker touchUi="true" #picker></mat-datepicker>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <!--  <td>
+                        <span>Gender</span><br><br>
+                        <mat-radio-group>
+                            <mat-radio-button value="1">Male</mat-radio-button>
+                            <mat-radio-button value="2">Female</mat-radio-button>
+                        </mat-radio-group>
+                    </td>
+                    <td><br>
+                        <mat-form-field>
+                            <mat-select placeholder="Select Blog" [(value)]="selected">
+                                <mat-option>-- Select Any --</mat-option>
+                                <mat-option value="1">C#Corner</mat-option>
+                                <mat-option value="2">C#Corner</mat-option>
+                                <mat-option value="3">C#Corner</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </td>
+                    -->
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="content-center">
+
+                        <button class="btn btn-primary" type="button">            Enviar
+                        </button>&nbsp;&nbsp;
+                        <button (click)="goBack()" class="btn btn-primary" type="button">            Cerrar
+                        </button>
+
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </mat-card-content>
+</mat-card>
