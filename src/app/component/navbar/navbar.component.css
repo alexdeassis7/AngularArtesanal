@@ -1,8 +1,10 @@
-.navbar {
-    opacity: 0.95; 
-    filter:(opacity=95);  
-  }
-  nose{
+nose {
     background-color: #557F01;
+}
 
-  }
+.navbar-custom {
+    opacity: 0.95;
+    filter: (opacity=95);
+    color: #FFFFFF;
+    background-color: #2F462B !important;
+}

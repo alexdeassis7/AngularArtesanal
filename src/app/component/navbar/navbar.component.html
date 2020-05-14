@@ -1,50 +1,35 @@
-<nav class="navbar navbar-expand-md">
-    <!-- style="background-color: #557F01;" -->
-    <!-- <a class="navbar-brand" href="/ferreteria/"><img src="../../../assets/imagenes/logo-alone.png" width="35" height="40"></a> -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<nav class=" navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top navbar-custom">
+
+    <div class="container">
+
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <div class="collapse navbar-collapse" id="navbarResponsive">
 
-            <li class="nav-item" style="color: white; ">
-                <a class="nav-link" style="color: white;" [routerLink]="['categorias']">Productos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" style="color: white;" href="#lineas">Fabricación</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" style="color: white;" href="#">Historia</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" style="color: white;" href="#">Clientes y Obras</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" style="color: white;" href="#ubicacion">Ubicación</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" style="color: white;" (click)="irAcontacto()">Contacto</a>
-            </li>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item" style="color: white; ">
+                    <a class="nav-link" style="color: white;" [routerLink]="['categorias']">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white;" [routerLink]="['lineas']">Fabricación</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white;" [routerLink]="['historia']">Historia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="#">Clientes y Obras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="#ubicacion">Ubicación</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white;" (click)="irAcontacto()">Contacto</a>
+                </li>
 
-            <!-- <li class="nav-item">
-          <a class="nav-link" style="color: white; background-color: #669900;" href="/ferreteria/index.php/mapa-del-sitio">Mapa del Sitio</a>
-        </li> -->
 
-            <!--  <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>  -->
-        </ul>
+            </ul>
+        </div>
     </div>
 </nav>

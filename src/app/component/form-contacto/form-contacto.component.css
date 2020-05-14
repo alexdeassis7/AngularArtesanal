@@ -28,7 +28,14 @@
 }
 
 .mat-toolbar {
-    opacity: 0.95;
+    opacity: 0.85;
     filter: (opacity=95);
-    background-color: rgb(48, 71, 2);
+    background-color: #2F462B;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+    background-color: #557F01 !important;
 }

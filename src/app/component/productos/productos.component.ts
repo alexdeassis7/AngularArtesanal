@@ -13,7 +13,7 @@ export class ProductosComponent implements OnInit {
 
   allProductos:any;
   filtradosProductos:any;
- 
+ categoriaNombre:string;
 
   constructor(private location: Location ,private activatedRoute: ActivatedRoute,private router:Router, private _productos:ProductosService) 
   { 
@@ -21,6 +21,8 @@ export class ProductosComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.categoriaNombre= localStorage.getItem('strNombreCat');
+
     //cargo todos los productos....
     this.getTodosLosProductos();
   }

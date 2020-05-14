@@ -1,27 +1,17 @@
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<tr>
-    <td colspan="2" class="content-center">
-
-
-        <button (click)="goBack()" class="btn btn-primary" type="button">            Volver A Categorias
+<div class="row"  style="background-color: honeydew;">
+    <div class="col-9">
+        <h3>Categoria Seleccionada: <b>{{categoriaNombre}}</b></h3>
+        <small>Productos por categoria</small>
+    </div>
+    <div class="col-2">
+        <button (click)="goBack()" class="btn btn-primary" type="button">Volver A Categorias
         </button>
-
-    </td>
-</tr>
-<h3>Categoria Seleccionada: </h3>
-<small>Productos por categoria</small>
-
+    </div>
+    <div class="col-1"></div>
+</div>
+<div class="row align-items-center"  style="background-color: honeydew;">
+<div class="col-12">
 <table class="table table-sm">
-
     <THEAD>
         <TH>Foto</TH>
         <th>Producto</th>
@@ -38,3 +28,7 @@
     </tbody>
 
 </table>
+<br>
+<br>
+</div>
+</div>

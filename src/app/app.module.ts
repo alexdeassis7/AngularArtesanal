@@ -14,9 +14,12 @@ import { MaterialModule } from './material.module';
 import { MatDialogModule, MatButtonModule, MatInputModule, MatFormFieldModule, MatCheckboxModule, MatRippleModule, MatSelectModule } from "@angular/material";
 import { ProductosService } from './service/productos.service';
 import { CategoriasServiceService } from './service/categorias-service.service';
+import { ServicioLineasFabService } from './service/servicio-lineas-fab.service';
 import { ProductosComponent } from './component/productos/productos.component';
 import { FormContactoComponent } from './component/form-contacto/form-contacto.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LineasFabricacionComponent } from './component/lineas-fabricacion/lineas-fabricacion.component';
+import { HistoriaComponent } from './component/historia/historia.component';
 //import { importExpr } from '@angular/compiler/src/output/output_ast';
 
 @NgModule({
@@ -28,7 +31,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CategoriaProductosComponent,
     InteriorBodyComponent,
     ProductosComponent,
-    FormContactoComponent
+    FormContactoComponent,
+    LineasFabricacionComponent,
+    HistoriaComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +48,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatCheckboxModule,
     MaterialModule
   ],
-  providers: [CategoriasServiceService, ProductosService],
+  providers: [CategoriasServiceService, ProductosService ,ServicioLineasFabService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

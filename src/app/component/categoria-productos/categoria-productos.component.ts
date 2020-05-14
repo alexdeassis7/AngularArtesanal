@@ -11,6 +11,7 @@ import { Location } from '@angular/common';
 })
 export class CategoriaProductosComponent implements OnInit {
 categorias:any;
+nombreCat:string;
 
   constructor(private location: Location,private activatedRoute: ActivatedRoute,private router:Router, private _categorias : CategoriasServiceService) { 
 
@@ -19,6 +20,7 @@ categorias:any;
   ngOnInit() {
     this.getCorridas();
     console.log("trae categorias: "+ this.categorias);
+    this.nombreCat="";
   }
   goBack() {
     this.location.back();
@@ -33,11 +35,12 @@ categorias:any;
     
     //this.categorias=this._categorias.getAllCategoriasLocal();
   }
-  verProductos(strIdCat){
+  verProductos(strIdCat:string,strNombreCat:string){
 
 
-    console.log("Categoria: "+strIdCat);
-
+    console.log("Categoria: "+strNombreCat);
+    
+    localStorage.setItem('strNombreCat', strNombreCat);
     this.router.navigate( ['/productos/', strIdCat] );
 
   }

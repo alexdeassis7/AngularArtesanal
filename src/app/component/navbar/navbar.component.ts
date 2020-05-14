@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-
+  
   constructor(private router: Router) { }
 
   ngOnInit() {
@@ -18,5 +18,9 @@ export class NavbarComponent implements OnInit {
     this.router.navigate( ['/contacto'] );
     //app-form-contacto
   }
+
+
+
+
 
 }

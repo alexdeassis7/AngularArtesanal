@@ -1,0 +1,24 @@
+<div class="container" style="background-color: honeydew;">
+    <div class="row align-items-center"  >
+        <div class="col-9">
+            <h3>Lineas de Fabricación</h3>
+        </div>
+        <div class="col-2 mt-2">
+            <button (click)="goBack()" class="btn btn-primary" type="button"> Cerrar
+                </button>
+        </div>
+        <div class="col-1"></div>
+    </div>
+    <div class="row align-items-center" >
+        <!-- <div class="col-12 align-items-center"> -->
+            <div class="card ml-2 mt-2 animated fadeIn fast" style="width: 10rem;" *ngFor="let una_lineasFab of lineasFab" >
+                <img  class="card-img-top img-fluid" src="../../../assets/lineas/{{ una_lineasFab.imagen }}" alt="{{una_lineasFab.linea}}" />
+                <div class="card-body">
+                    <h3><b>{{una_lineasFab.linea}}</b></h3>
+                    <p>{{una_lineasFab.descripcion}}</p>
+                </div>
+            </div>
+        <!-- </div>     -->
+    </div>
+
+</div>

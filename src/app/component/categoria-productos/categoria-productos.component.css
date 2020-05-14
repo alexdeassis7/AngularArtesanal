@@ -26,3 +26,10 @@
 .fadeIn {
     animation-name: fadeIn;
 }
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+    background-color: #557F01 !important;
+}
